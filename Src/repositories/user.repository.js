@@ -2,7 +2,8 @@ const { User } = require("./../models/index");
 
 const UserRepository = {
   save: (user) => {
-    return User.create(user);
+    console.log("repo: " + JSON.stringify(user));
+    return User.create({...user});
   },
   findAll: (filters) => {
     return User.find(filters).lean();

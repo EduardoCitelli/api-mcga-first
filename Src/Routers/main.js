@@ -1,8 +1,6 @@
-const { Router } = require("express");
-const { getRoot } = require("./../controllers/index");
 const { MainRoutes } = require("./routes");
-
-const mainRouter = Router();
+const { getRoot } = require("./../controllers/index");
+const mainRouter = require("express").Router();
 
 mainRouter.get(MainRoutes.Main, getRoot);
 

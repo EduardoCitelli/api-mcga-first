@@ -1,5 +1,9 @@
-const validateEntityMiddleware = require("./validation.middleware");
+const {
+  validateEntity,
+  validateParameter,
+} = require("./validation.middleware");
 
 module.exports = {
-  validateEntityMiddleware,
+  validateEntity,
+  validateParameter,
 };

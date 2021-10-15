@@ -1,5 +1,16 @@
 const MainRoutes = {
-    Main: "/",
+  Main: "/",
 };
 
-module.exports =  { MainRoutes }
+const UserRoutes = {
+  Get: "/users",
+  GetById: '/users/getById/:id',
+  Create: "/users/create",
+  Update: "/users/update/:id",
+  Delete: "/users/delete/:id",
+};
+
+module.exports = {
+  MainRoutes,
+  UserRoutes,
+};

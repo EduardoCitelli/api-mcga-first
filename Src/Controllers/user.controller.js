@@ -36,7 +36,7 @@ const getOne = async (req, res) => {
 };
 
 const create = async (req, res) => {
-  const { user } = req.body;
+  const user  = req.body;
 
   const entity = await userService.create(user);
 
@@ -49,7 +49,7 @@ const create = async (req, res) => {
 const update = async (req, res) => {
   const { id } = req.params;
 
-  const user = await itemsService.update(id, req.body);
+  const user = await userService.update(id, req.body);
 
   if (!user) {
     res.status(404).send({

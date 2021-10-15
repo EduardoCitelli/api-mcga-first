@@ -1,6 +1,7 @@
 const { userRepository } = require("./../repositories/index");
 
 const create = async (user) => {
+    console.log("service: " + JSON.stringify(user));
   const entity = await userRepository.save(user);
 
   const response = { id: entity._id.toString(), ...entity._doc };

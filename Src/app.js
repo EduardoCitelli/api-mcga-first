@@ -1,16 +1,15 @@
 require("dotenv").config();
-require('./connections/mongoose');
+require("./connections/mongoose");
 const express = require("express");
 const cors = require("cors");
 
-const { mainRouter } = require("./routers/main");
-
+const { mainRouter, userRouter } = require("./routers/index");
 
 const app = express();
 app.use(express.json());
 app.use(cors());
-app.use(mainRouter);
+app.use(mainRouter, userRouter);
 
 module.exports = {
-    app,
+  app,
 };
