@@ -85,7 +85,7 @@ $ npm install
 # Run the project
 $ npm start
 // or
-npm run dev // to run the app on development mode
+$ npm run dev // to run the app on development mode
 
 # The server will initialize in the <http://localhost:PORT>
 ```
