@@ -3,7 +3,7 @@
 
   &#xa0;
 
-  <!-- <a href="https://apimcgafirst.netlify.app">Demo</a> -->
+  <a href="https://api-mcga-first.herokuapp.com/">Demo</a>
 </div>
 
 <h1 align="center">Api Mcga First</h1>
@@ -17,14 +17,14 @@
 
   <img alt="License" src="https://img.shields.io/github/license/EduardoCitelli/api-mcga-first?color=56BEB8">
 
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/EduardoCitelli/api-mcga-first?color=56BEB8" /> -->
+  <img alt="Github issues" src="https://img.shields.io/github/issues/EduardoCitelli/api-mcga-first?color=56BEB8" />
 
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/EduardoCitelli/api-mcga-first?color=56BEB8" /> -->
+  <img alt="Github forks" src="https://img.shields.io/github/forks/EduardoCitelli/api-mcga-first?color=56BEB8" />
 
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/EduardoCitelli/api-mcga-first?color=56BEB8" /> -->
+  <img alt="Github stars" src="https://img.shields.io/github/stars/EduardoCitelli/api-mcga-first?color=56BEB8" />
 </p>
 
-<!-- Status -->
+Status
 
 <h4 align="center"> 
 	🚧  Api Mcga First 🚀 Under construction...  🚧
