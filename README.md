@@ -46,11 +46,12 @@
 
 ## :dart: About ##
 
-Describe your project
+This project was developed for the first exam of the MCGA subject, 
+for it a simple API was requested that has the basic commands "CRUD"
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Creation of Users with API;\
+:heavy_check_mark: Creation of Users with API
 
 ## :rocket: Technologies ##
 
@@ -60,6 +61,10 @@ The following tools were used in this project:
 - [Express.js](https://expressjs.com/)
 
 ## :white_check_mark: Requirements ##
+
+To run this project, you will need to add the following environment variables to your ``` .env ``` file
+PORT, being the port where you want the app to be ran at.
+CONNECTION_STRING, being your custom Mongo DB connection string.
 
 Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
 
@@ -77,8 +82,10 @@ $ npm install
 
 # Run the project
 $ npm start
+// or
+npm run dev // to run the app on development mode
 
-# The server will initialize in the <http://localhost:4000>
+# The server will initialize in the <http://localhost:PORT>
 ```
 
 ## :memo: License ##
