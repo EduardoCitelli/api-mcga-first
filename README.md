@@ -50,15 +50,14 @@ Describe your project
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: Creation of Users with API;\
 
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
 
 - [Node.js](https://nodejs.org/en/)
+- [Express.js](https://expressjs.com/)
 
 ## :white_check_mark: Requirements ##
 
@@ -74,12 +73,12 @@ $ git clone https://github.com/EduardoCitelli/api-mcga-first
 $ cd api-mcga-first
 
 # Install dependencies
-$ yarn
+$ npm install
 
 # Run the project
-$ yarn start
+$ npm start
 
-# The server will initialize in the <http://localhost:3000>
+# The server will initialize in the <http://localhost:4000>
 ```
 
 ## :memo: License ##
@@ -87,7 +86,7 @@ $ yarn start
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
 
-Made with :heart: by <a href="https://github.com/EduardoCitelli" target="_blank">{{YOUR_NAME}}</a>
+Made by <a href="https://github.com/EduardoCitelli" target="_blank">Eduardo Citelli</a>
 
 &#xa0;
 
