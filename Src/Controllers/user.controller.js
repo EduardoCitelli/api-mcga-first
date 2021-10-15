@@ -36,14 +36,32 @@ const getOne = async (req, res) => {
 };
 
 const create = async (req, res) => {
-  const user  = req.body;
+  const user = req.body;
 
-  const entity = await userService.create(user);
+  await userService.create(user)
+    .then(data => {
+      res.status(201).json({
+        message: "Success",
+        data: data,
+      });
+    })
+    .catch(error => {
+      if (error.code && error.code == 11000) {
+        const field = Object.keys(error.keyValue);
 
-  res.status(201).json({
-    message: "Success",
-    data: entity,
-  });
+        res.status(409).json({
+          message: "error",
+          error: `A user with that ${field} already exists.`
+        });
+
+        return;
+      }
+
+      res.status(500).json({
+        message: "error",
+        error: "not controlled error"
+      });
+    });
 };
 
 const update = async (req, res) => {
@@ -67,7 +85,7 @@ const update = async (req, res) => {
 const deleteUser = async (req, res) => {
   const { id } = req.params;
 
-  const user = await itemsService.delete(id);
+  const user = await userService.delete(id);
 
   if (!user) {
     res.status(404).send({

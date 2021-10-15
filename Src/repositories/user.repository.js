@@ -2,8 +2,7 @@ const { User } = require("./../models/index");
 
 const UserRepository = {
   save: (user) => {
-    console.log("repo: " + JSON.stringify(user));
-    return User.create({...user});
+    return User.create({ ...user });
   },
   findAll: (filters) => {
     return User.find(filters).lean();
@@ -12,7 +11,7 @@ const UserRepository = {
     return User.findById(id).lean();
   },
   update: (id, user) => {
-    return User.updateOne({ _id: id }, user);
+    return User.findByIdAndUpdate(id, user, { new: true });
   },
   delete: (id) => {
     return User.findByIdAndDelete(id);
