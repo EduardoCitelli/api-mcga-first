@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const { getRoot } = require("./../controllers/main");
+const { getRoot } = require("./../controllers/index");
 const { MainRoutes } = require("./routes");
 
 const mainRouter = Router();
