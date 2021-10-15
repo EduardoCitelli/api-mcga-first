@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Api Mcga First" />
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWNbJewm6KhNsQZWDgZKNYIG0SqOdw4qMKTVI209_s06mgOM1B9HPmSR93VHO5JCb8tbs&usqp=CAU" alt="Api Mcga First" />
 
   &#xa0;
 
