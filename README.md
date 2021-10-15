@@ -63,8 +63,10 @@ The following tools were used in this project:
 ## :white_check_mark: Requirements ##
 
 To run this project, you will need to add the following environment variables to your ``` .env ``` file
-PORT, being the port where you want the app to be ran at.
-CONNECTION_STRING, being your custom Mongo DB connection string.
+
+``` PORT ```, being the port where you want the app to be ran at.
+
+``` CONNECTION_STRING ```, being your custom Mongo DB connection string.
 
 Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
 
