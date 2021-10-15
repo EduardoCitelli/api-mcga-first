@@ -1,25 +1,24 @@
-const { Schema, SchemaTypes } = require('mongoose')
-require('mongoose-type-email');
+const { Schema, SchemaTypes } = require("mongoose");
+require("mongoose-type-email");
 
 const userModel = new Schema({
   name: {
-      type: String,
-      required: true
-    },
+    type: String,
+    required: true,
+  },
   surname: {
     type: String,
-    required: true
+    required: true,
   },
   phone: String,
   email: {
     type: SchemaTypes.Email,
-    required: true
+    required: true,
   },
   username: {
     type: String,
     unique: true,
   },
 });
-
 
 module.exports = userModel;

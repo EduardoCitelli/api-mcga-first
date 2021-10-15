@@ -1,6 +1,7 @@
-const mongoose = require('./../connections/mongoose');
+const { model } = require("mongoose");
+const userModel = require("./user");
 
-const User = mongoose.model('User', userModel);
+const User = model("User", userModel);
 
 module.exports = {
   User,
