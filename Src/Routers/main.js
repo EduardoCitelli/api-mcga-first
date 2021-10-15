@@ -1,5 +1,5 @@
 const { MainRoutes } = require("./routes");
-const { getRoot } = require("./../controllers/index");
+const { getRoot } = require("./../Controllers/index");
 const mainRouter = require("express").Router();
 
 mainRouter.get(MainRoutes.Main, getRoot);

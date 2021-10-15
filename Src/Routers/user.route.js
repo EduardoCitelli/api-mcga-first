@@ -1,7 +1,7 @@
 const { UserRoutes } = require("./routes");
 const { validateEntity, validateParameter } = require("./../middlewares/index");
 const { userSchema, userIdSchema } = require("./../schemas/index");
-const { userController } = require("./../controllers/index");
+const { userController } = require("./../Controllers/index");
 const userRouter = require("express").Router();
 
 userRouter.get(UserRoutes.Get, userController.getAll);

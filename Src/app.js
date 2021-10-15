@@ -3,7 +3,7 @@ require("./connections/mongoose");
 const express = require("express");
 const cors = require("cors");
 
-const { mainRouter, userRouter } = require("./routers/index");
+const { mainRouter, userRouter } = require("./Routers/index");
 
 const app = express();
 app.use(express.json());
