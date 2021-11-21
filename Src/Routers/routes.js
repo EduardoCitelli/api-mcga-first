@@ -4,10 +4,10 @@ const MainRoutes = {
 
 const UserRoutes = {
   Get: "/users",
-  GetById: '/users/getById/:id',
-  Create: "/users/create",
-  Update: "/users/update/:id",
-  Delete: "/users/delete/:id",
+  GetById: '/users/:id',
+  Create: "/users",
+  Update: "/users/:id",
+  Delete: "/users/:id",
 };
 
 module.exports = {
