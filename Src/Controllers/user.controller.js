@@ -42,11 +42,9 @@ const create = async (req, res) => {
 
   await userService.create(user)
     .then(data => {
-      const response = createResponse(data);
-
       res.status(201).json({
         message: "Success",
-        data: response,
+        data: data,
       });
 
       return;
@@ -65,7 +63,7 @@ const create = async (req, res) => {
 
       res.status(500).json({
         message: "error",
-        error: "not controlled error"
+        error: JSON.stringify(error),
       });
     });
 };
