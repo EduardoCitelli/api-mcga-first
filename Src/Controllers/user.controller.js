@@ -42,7 +42,6 @@ const create = async (req, res) => {
 
   await userService.create(user)
     .then(data => {
-
       const response = createResponse(data);
 
       res.status(201).json({
@@ -81,7 +80,7 @@ const update = async (req, res) => {
     return;
   }
 
-  const response = createResponse(user);
+  const response = createResponse(user._doc);
 
   res.send({
     message: "Success",
