@@ -29,9 +29,11 @@ const getOne = async (req, res) => {
     return;
   }
 
+  const response = createResponse(user);
+
   res.send({
     message: "Success",
-    data: user,
+    data: response,
   });
 };
 
@@ -40,9 +42,12 @@ const create = async (req, res) => {
 
   await userService.create(user)
     .then(data => {
+
+      const response = createResponse(data);
+
       res.status(201).json({
         message: "Success",
-        data: data,
+        data: response,
       });
     })
     .catch(error => {
@@ -76,9 +81,11 @@ const update = async (req, res) => {
     return;
   }
 
+  const response = createResponse(user);
+
   res.send({
     message: "Success",
-    data: user,
+    data: response,
   });
 };
 
@@ -95,9 +102,11 @@ const deleteUser = async (req, res) => {
     return;
   }
 
+  const response = createResponse(user);
+
   res.send({
     message: "Success",
-    data: user,
+    data: response,
   });
 };
 
@@ -108,3 +117,15 @@ module.exports = {
   delete: deleteUser,
   update,
 };
+
+function createResponse(user) {
+  const response = {
+    id: user._id.toString(),
+    ...user,
+  };
+
+  delete response._id;
+  delete response.__v;
+
+  return response;
+}
