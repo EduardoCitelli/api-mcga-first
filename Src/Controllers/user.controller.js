@@ -48,6 +48,8 @@ const create = async (req, res) => {
         message: "Success",
         data: response,
       });
+
+      return;
     })
     .catch(error => {
       if (error.code && error.code == 11000) {
