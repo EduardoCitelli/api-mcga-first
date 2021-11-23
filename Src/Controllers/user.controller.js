@@ -101,7 +101,7 @@ const deleteUser = async (req, res) => {
     return;
   }
 
-  const response = createResponse(user);
+  const response = createResponse(user._doc);
 
   res.send({
     message: "Success",
