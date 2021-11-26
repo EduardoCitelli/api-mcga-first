@@ -3,7 +3,8 @@ const validateEntity = (schema) => (req, res, next) => {
 
   if (error) {
     res.status(400).send({
-      error: error.details.map((x) => x.message),
+      message: "bad request",
+      error: error.details.map((x) => x.message).toString(),
     });
 
     return;
@@ -18,7 +19,8 @@ const validateParameter = (schema) => (req, res, next) => {
 
   if (error) {
     res.status(400).send({
-      error: error.details.map((x) => x.message),
+      message: "bad request",
+      error: error.details.map((x) => x.message).toString(),
     });
 
     return;

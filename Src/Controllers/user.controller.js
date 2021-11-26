@@ -24,6 +24,7 @@ const getOne = async (req, res) => {
   if (!user) {
     res.status(404).send({
       message: "Not found",
+      error: "User not found",
     });
 
     return;
@@ -63,7 +64,7 @@ const create = async (req, res) => {
 
       res.status(500).json({
         message: "error",
-        error: JSON.stringify(error),
+        error: JSON.stringify(error).toString(),
       });
     });
 };
@@ -76,6 +77,7 @@ const update = async (req, res) => {
   if (!user) {
     res.status(404).send({
       message: "Not found",
+      error: "User not found",
     });
     return;
   }
@@ -96,6 +98,7 @@ const deleteUser = async (req, res) => {
   if (!user) {
     res.status(404).send({
       message: "Not found",
+      error: "User not found",
     });
 
     return;
